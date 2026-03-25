@@ -1,0 +1,12 @@
+class Solution {
+    public boolean canAliceWin(int[] nums) {
+        int dsum=0,sum=0;
+        for(int n:nums)
+        {
+            if(n<=9) sum+=n;
+            else dsum+=n;
+        }
+        return sum==dsum?false:true;
+        
+    }
+}
